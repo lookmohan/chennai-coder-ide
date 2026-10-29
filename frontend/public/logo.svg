@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-label="Chennai Coder logo">
+  <title>Chennai Coder</title>
+  <defs>
+    <!-- Upper half of the mark; the lower half is a vertical mirror of this group. -->
+    <g id="cc-top">
+      <circle cx="200" cy="400" r="28" fill="#05208a"/>
+      <circle cx="319" cy="400" r="42" fill="#0a3fd6"/>
+      <circle cx="479" cy="384" r="44" fill="#0088f8"/>
+      <circle cx="579" cy="344" r="39" fill="#00b4ff"/>
+      <circle cx="675" cy="354" r="34" fill="#00d8ff"/>
+      <circle cx="759" cy="396" r="28" fill="#00ecfc"/>
+      <circle cx="824" cy="337" r="22" fill="#00f6f6"/>
+      <circle cx="899" cy="372" r="13" fill="#00fcfc"/>
+
+      <circle cx="259" cy="302" r="29" fill="#0a2a9e"/>
+      <circle cx="391" cy="307" r="37" fill="#0d56f6"/>
+
+      <circle cx="326" cy="221" r="28" fill="#0a3fc0"/>
+      <circle cx="478" cy="240" r="35" fill="#0080f0"/>
+      <circle cx="570" cy="214" r="31" fill="#00a4ff"/>
+      <circle cx="661" cy="228" r="29" fill="#00c8ff"/>
+      <circle cx="745" cy="274" r="26" fill="#00e0fc"/>
+      <circle cx="800" cy="232" r="18" fill="#00f4ff"/>
+      <circle cx="861" cy="307" r="15" fill="#00fcfc"/>
+
+      <circle cx="400" cy="158" r="26" fill="#0b4cf0"/>
+      <circle cx="479" cy="121" r="24" fill="#0070ff"/>
+      <circle cx="566" cy="111" r="23" fill="#0098ff"/>
+      <circle cx="652" cy="128" r="22" fill="#00bfff"/>
+      <circle cx="730" cy="167" r="21" fill="#00d8ff"/>
+    </g>
+  </defs>
+
+  <!-- Center row -->
+  <circle cx="149" cy="512" r="26" fill="#00106e"/>
+  <circle cx="251" cy="512" r="37" fill="#0a2a9e"/>
+  <circle cx="384" cy="512" r="59" fill="#1160f8"/>
+
+  <use href="#cc-top"/>
+  <use href="#cc-top" transform="matrix(1 0 0 -1 0 1024)"/>
+</svg>

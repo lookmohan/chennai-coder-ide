@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 224 30% 10%;
+    --card: 0 0% 100%;
+    --muted: 220 16% 96%;
+    --muted-foreground: 220 10% 38%;
+    --border: 220 14% 88%;
+    --primary: 220 94% 53%; /* logo blue #1160F8 */
+    --primary-foreground: 0 0% 100%;
+    --danger: 0 72% 46%;
+    --danger-foreground: 0 0% 100%;
+    --success: 142 70% 30%;
+    --success-foreground: 0 0% 100%;
+    --ring: 220 94% 53%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 224 40% 6%;
+    --foreground: 210 20% 96%;
+    --card: 224 34% 9%;
+    --muted: 224 28% 14%;
+    --muted-foreground: 218 14% 68%;
+    --border: 224 24% 19%;
+    --primary: 217 100% 64%;
+    --primary-foreground: 224 40% 6%;
+    --danger: 0 84% 66%;
+    --danger-foreground: 224 40% 6%;
+    --success: 142 60% 48%;
+    --success-foreground: 224 40% 6%;
+    --ring: 217 100% 64%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-background font-sans text-foreground antialiased;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+/* Keeps the mobile bottom nav clear of the iOS home indicator. */
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
